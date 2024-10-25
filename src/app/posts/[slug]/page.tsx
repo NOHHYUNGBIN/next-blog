@@ -3,6 +3,7 @@ import MarkdownViewer from "@/app/components/MarkdownViewer";
 import Image from "next/image";
 import React from "react";
 import { AiTwotoneCalendar } from "react-icons/ai";
+
 type Props = {
   params: {
     slug: string;
