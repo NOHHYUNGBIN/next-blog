@@ -1,5 +1,5 @@
 import React from "react";
-import { getAllPosts } from "../api/service";
+import { getAllPosts } from "../../service/posts";
 import FilterablePosts from "../components/FilterablePosts";
 
 export default async function PostsPage() {

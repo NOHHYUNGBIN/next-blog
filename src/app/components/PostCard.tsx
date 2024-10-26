@@ -1,5 +1,5 @@
 import React from "react";
-import { Post } from "../api/service";
+import { Post } from "../../service/posts";
 import Link from "next/link";
 import Image from "next/image";
 

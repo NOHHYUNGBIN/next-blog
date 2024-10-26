@@ -1,5 +1,5 @@
 import React from "react";
-import { getNonFeaturedPosts } from "../api/service";
+import { getNonFeaturedPosts } from "../../service/posts";
 import PostCard from "./PostCard";
 import MultiCarousel from "./MultiCarousel";
 

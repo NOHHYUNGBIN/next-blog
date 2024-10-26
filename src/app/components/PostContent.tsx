@@ -1,7 +1,7 @@
 import React from "react";
 import MarkdownViewer from "@/app/components/MarkdownViewer";
 import { AiTwotoneCalendar } from "react-icons/ai";
-import { PostData } from "../api/service";
+import { PostData } from "../../service/posts";
 export default function PostContent({ post }: { post: PostData }) {
   const { title, description, date, content } = post;
   return (
