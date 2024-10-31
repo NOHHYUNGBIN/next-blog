@@ -1,5 +1,6 @@
 import React from "react";
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+import ContactForm from "../components/ContactForm";
 
 const LINKS = [
   {
@@ -10,24 +11,26 @@ const LINKS = [
     icon: <AiFillInstagram />,
     url: `https://www.instagram.com/nohhyungbin/`,
   },
-  {
-    icon: <AiFillLinkedin />,
-    url: `https://github.com/NOHHYUNGBIN`,
-  },
 ];
 export default function Contactpage() {
   return (
-    <>
-      <h2>Contact me</h2>
+    <section className="flex flex-col items-center">
+      <h2 className="text-3xl font-bold my-2">Contact me</h2>
       <p>shgudqlsz@naver.com</p>
-      <ul>
+      <ul className="flex gap-4 my-2">
         {LINKS.map((link, index) => (
-          <a href={link.url} target="_black" rel="noreferrer">
+          <a
+            href={link.url}
+            target="_black"
+            rel="noreferrer"
+            className="text-5xl hover:text-yellow-400"
+          >
             {link.icon}
           </a>
         ))}
       </ul>
-      <h2>Or Send me an email</h2>
-    </>
+      <h2 className="text-3xl font-bold my-8">Or Send me an email</h2>
+      <ContactForm />
+    </section>
   );
 }
