@@ -27,7 +27,7 @@ export default function Aboutpage() {
         </p>
         <h2 className={TITLE_CLASS}>Skills</h2>
         <p>
-          React.js, Next.js, JavaScript, JAVA, C, Node
+          React.js, Next.js, JavaScript, JAVA, C, Node.js, TypeScript
           <br />
           GIT, SVN, Clean Code
           <br />
