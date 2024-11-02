@@ -1,6 +1,7 @@
 import React from "react";
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import ContactForm from "../components/ContactForm";
+import { Metadata } from "next";
 
 const LINKS = [
   {
@@ -12,6 +13,10 @@ const LINKS = [
     url: `https://www.instagram.com/nohhyungbin/`,
   },
 ];
+export const metadata: Metadata = {
+  title: "Contact Me",
+  description: "Contact Nohhb",
+};
 export default function Contactpage() {
   return (
     <section className="flex flex-col items-center">
