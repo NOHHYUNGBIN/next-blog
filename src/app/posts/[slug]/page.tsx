@@ -1,4 +1,4 @@
-import { getPostData } from "@/service/posts";
+import { getFeaturedPosts, getPostData } from "@/service/posts";
 import PostContent from "@/app/components/PostContent";
 import Image from "next/image";
 import React from "react";
@@ -38,4 +38,12 @@ export default async function PostPage({ params: { slug } }: Props) {
       </section>
     </article>
   );
+}
+
+// 원하는 슬러그에 한해서 페이지를 미리만들어 주기위해서..
+export async function generateStaticParams() {
+  const posts = await getFeaturedPosts();
+  return posts.map((post) => ({
+    slug: post.path,
+  }));
 }

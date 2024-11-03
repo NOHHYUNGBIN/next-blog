@@ -25,6 +25,7 @@ export default function Contactpage() {
       <ul className="flex gap-4 my-2">
         {LINKS.map((link, index) => (
           <a
+            key={index}
             href={link.url}
             target="_black"
             rel="noreferrer"
